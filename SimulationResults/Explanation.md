@@ -3,7 +3,7 @@
 
 This document traces the hardware execution profile verified across the processor core simulation waveforms.
 
-## 📊 Sim1: Assembly Code Verification
+## 📊 Sim2: Assembly Code Verification
 
 The processor was initialized and loaded with a custom diagnostic program designed to exercise computational arithmetic, bitwise logic operations, data memory routing, and relative branching mechanisms:
 
