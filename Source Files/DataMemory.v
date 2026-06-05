@@ -1,4 +1,4 @@
-//DATA MEMORY DESIGN
+m//DATA MEMORY DESIGN
 module DataMemory(clk,MemRead,MemWrite,wd,Address,ReadData);
 
        input clk,MemRead,MemWrite;
