@@ -9,6 +9,11 @@ A hardware implementation of a single-cycle RISC-V 64-bit processor core designe
 * **Doubleword-Aligned Memory Layout:** The data memory configuration features byte-to-doubleword truncation addressing (`Address[12:3]`), ensuring robust structural alignment.
 
 ---
+## 📐 Processor Architecture & Datapath Layout
+The Processor follows **Harvard Architecture** with separate Memories for Instruction and Data fetching.This provides facility to read instruction and access data in memory in the same clock cycle
+Below is the structural topography followed for this 64-bit single-cycle implementation, tracing the complete instruction execution flow from the Program Counter to the Writeback multiplexer network:
+
+
 
 ## ⚡ Design Considerations & Core Optimizations
 
