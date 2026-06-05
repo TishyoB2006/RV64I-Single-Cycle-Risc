@@ -11,8 +11,7 @@ module RegisterFile(clk,RegWrite,ra1,ra2,wa,wd,rd1,rd2);
            if (RegWrite && wa!=0)   //TO PREVENT WRITING IN x0 REGISTER
                Registers[wa] <= wd; 
        end      //WRITE OPERATION
-       /*assign rd1 = (ra1 != 0)?Registers[ra1]:0;
-       assign rd2 = (ra2 != 0)?Registers[ra2]:0;*/
+
        assign rd1 = (ra1 == 0) ? 64'd0 : 
                     ((ra1 == wa) && RegWrite) ? wd : Registers[ra1];
                     
