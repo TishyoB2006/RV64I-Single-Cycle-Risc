@@ -22,8 +22,6 @@ initial begin
     // infinite loop
     mem[7] = 32'h00000063;
 end
-
-end
 assign Instr = mem[PC[9:2]];
 
 endmodule
